@@ -1,5 +1,5 @@
 # UAS-Praktikum-Sistem-Operasi
-
+|   |   |
 |--|--|
 | Nama | Muhammad Rizal Razaan |
 | NIM | 21104410061 |
