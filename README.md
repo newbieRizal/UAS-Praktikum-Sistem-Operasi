@@ -1,4 +1,5 @@
 # UAS-Praktikum-Sistem-Operasi
+![Logo](https://seeklogo.com/images/U/ubuntu-logo-8B7C9ED4AD-seeklogo.com.png)
 |   |   |
 |--|--|
 | Nama | Muhammad Rizal Razaan |
