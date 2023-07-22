@@ -1,4 +1,3 @@
-# UAS-Praktikum-Sistem-Operasi
 # UAS Praktikum Sistem Operasi ( Pemograman Shell )
 ![Logo](https://seeklogo.com/images/U/ubuntu-logo-8B7C9ED4AD-seeklogo.com.png)
 |   |   |
