@@ -12,4 +12,4 @@
 
 
 
-![image.png](https://github.com/newbieRizal/UAS-Praktikum-Sistem-Operasi/issues/1#issue-1817547270.png)
+![image.png](https://user-images.githubusercontent.com/108317222/255467195-cdf668c4-e574-493c-a885-1964af401a8f.jpeg)
