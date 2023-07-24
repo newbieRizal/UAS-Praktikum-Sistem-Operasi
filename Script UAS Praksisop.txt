@@ -1,0 +1,105 @@
+#!/bin/bash
+
+declare a- mahasiswa
+
+# Function untuk menghitung bilangan Fibonacci
+function fibonacci() {
+    local num=$1
+
+    if [ $num -le 0 ]; then
+        echo "0"
+    elif [ $num -eq 1 ]; then
+        echo "1"
+    else
+        local a=0
+        local b=1
+        local fib=1
+
+        for ((i = 2; i <= num; i++)); do
+            fib=$((a + b))
+            a=$b
+            b=$fib
+        done
+
+        echo "$fib"
+    fi
+}
+
+# Function untuk input data mahasiswa
+   function input_data() { 
+    read -p "Masukkan Nama Anda: " name
+    read -p "Masukkan NIM Anda: " nim
+    read -p "Masukkan Alamat Anda: " address
+
+    # Menyimpan data dalam array students
+    students+=("$name - $nim - $address")
+}
+
+# Function untuk menampilkan data mahasiswa
+    function display_data() {
+    if [ ${#students[@]} -eq 0 ]; then
+        echo "Belum ada data yang dimasukkan."
+    else
+        echo "Data Mahasiswa:"
+        for ((i = 0; i < ${#students[@]}; i++)); do
+            echo "$(($i + 1)). ${students[$i]}"
+        done
+    fi
+}
+
+# Function untuk menampilkan menu utama
+function show_menu() {
+	echo "Muhammad Rizal Razaan | 22104410061 "
+	echo "================================================="	
+    echo "SELAMA DATANG DI MENU PROGRAM AAN"
+	echo "-------------------------------------------------"
+    echo "1. Hitung Bilangan Fibonacci "
+    echo "2. Input Data Mahasiswa"
+    echo "3. Tampilkan Data Mahasiswa"
+    echo "0. Keluar"
+	echo "================================================="
+    read -p "Masukkan pilihan [0-3]: " choice
+}
+
+# Main loop
+while true; do
+    show_menu
+
+    case $choice in
+        1)
+            # Pilihan 1: Hitung Bilangan Fibonacci
+            read -p "Masukkan angka awal: " start
+            read -p "Masukkan angka akhir: " end
+
+            # Validasi input
+            if [ $start -gt $end ]; then
+                echo "Angka awal harus lebih kecil dari angka akhir."
+                continue
+            fi
+
+            echo "Bilangan Fibonacci dari $start hingga $end:"
+            for ((i = start; i <= end; i++)); do
+                result=$(fibonacci $i)
+                echo "Fibonacci dari $i: $result"
+            done
+            ;;
+        2)
+            # Pilihan 2: Input Data Mahasiswa
+            input_data
+            ;;
+        3)
+            # Pilihan 3: Tampilkan Data Mahasiswa
+            display_data
+            ;;
+        0)
+            # Pilihan 0: Keluar
+            echo "Terima kasih, Selamat menggunakan kembali"
+            exit
+            ;;
+        *)
+            echo "Pilihan anda salah atau bukan dengan nomer yang sudah tertera. Silakan masukkan angka dari 0 hingga 3."
+            ;;
+    esac
+
+    echo
+done
