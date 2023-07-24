@@ -12,4 +12,4 @@
 
 
 
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/newbieRizal/UAS-Praktikum-Sistem-Operasi/issues/1#issue-1817547270)https://github.com/newbieRizal/UAS-Praktikum-Sistem-Operasi/issues/1#issue-1817547270)
+![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/newbieRizal/UAS-Praktikum-Sistem-Operasi/issues/1#issue-1817547270)https://github.com/newbieRizal/UAS-Praktikum-Sistem-Operasi/issues/1#issue-1817547270.png)
